@@ -9,7 +9,7 @@ const DATA = {
   role: "Law | IT",
   blurb: "",
   location: "Brisbane / Remote",
-  avatar: "/personal-portfolio/headshot.png",
+  avatar: "/personal_portfolio/headshot.png",
   socials: [
     { icon: Github, label: "GitHub", href: "https://github.com/JohnJohnW" },
     { icon: Linkedin, label: "LinkedIn", href: "https://www.linkedin.com/in/john-wynter/" },
