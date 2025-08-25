@@ -3,5 +3,5 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  base: process.env.BASE_PATH || '/personal_portfolio/',
+  base: process.env.BASE_PATH || '/personal-portfolio/',
 })
