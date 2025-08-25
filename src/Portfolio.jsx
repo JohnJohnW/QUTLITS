@@ -170,6 +170,7 @@ function LiquidBlobs() {
       <div className="absolute -top-24 -left-16 h-[40rem] w-[40rem] rounded-full bg-gradient-to-br from-fuchsia-500/40 via-indigo-500/30 to-blue-500/30 blur-3xl opacity-70 mix-blend-screen animate-pulse" />
       <div className="absolute -bottom-24 -right-16 h-[38rem] w-[38rem] rounded-full bg-gradient-to-tr from-cyan-400/30 via-sky-500/30 to-indigo-600/30 blur-3xl opacity-70 mix-blend-screen animate-[pulse_9s_ease-in-out_infinite]" />
     </div>
+  </div>
   );
 }
 
