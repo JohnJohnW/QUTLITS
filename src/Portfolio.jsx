@@ -89,14 +89,40 @@ const uploadsPlaylist = (channelId) =>
   channelId && channelId.startsWith("UC") ? `UU${channelId.slice(2)}` : "";
 
 function useTheme() {
-  // lock dark theme
-  const [dark] = useState(true);
+  // Force dark theme always
   useEffect(() => {
     const root = document.documentElement;
+    // Remove any existing theme classes
+    root.classList.remove("light");
+    root.classList.remove("auto");
+    // Force dark theme
     root.classList.add("dark");
-    return () => root.classList.remove("dark");
+    
+    // Also set data attribute to ensure dark mode
+    root.setAttribute("data-theme", "dark");
+    
+    // Prevent any theme switching
+    const observer = new MutationObserver((mutations) => {
+      mutations.forEach((mutation) => {
+        if (mutation.type === 'attributes' && mutation.attributeName === 'class') {
+          const classes = root.classList;
+          if (classes.contains('light') || !classes.contains('dark')) {
+            root.classList.remove('light');
+            root.classList.add('dark');
+          }
+        }
+      });
+    });
+    
+    observer.observe(root, { attributes: true, attributeFilter: ['class'] });
+    
+    return () => {
+      observer.disconnect();
+      root.classList.remove("dark");
+    };
   }, []);
-  return { dark };
+  
+  return { dark: true };
 }
 
 function cn(...xs) { return xs.filter(Boolean).join(" "); }
@@ -290,21 +316,12 @@ export default function Portfolio() {
                   </div>
                 </div>
 
-                {/* Consulting row */}
+                {/* Location row */}
                 <div className="mt-5 flex items-center justify-between gap-3">
-                  <div className="text-sm text-neutral-400">Open to consulting • {DATA.location}</div>
+                  <div className="text-sm text-neutral-400">{DATA.location}</div>
                   <a href="#contact" onClick={scrollTo("contact")} className="inline-flex items-center gap-2 text-sm">
                     Get in touch <ArrowRight className="h-4 w-4" />
                   </a>
-                </div>
-
-                {/* Skills moved below the consulting row */}
-                <div className="mt-5 grid grid-cols-3 gap-3">
-                  {['Python','JavaScript','React','n8n','AI agents','WordPress'].map((sk) => (
-                    <div key={sk} className="rounded-2xl border border-white/10 bg-white/5 p-3 text-center text-sm">
-                      {sk}
-                    </div>
-                  ))}
                 </div>
               </motion.div>
             </Tilt>

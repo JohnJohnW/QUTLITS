@@ -4,3 +4,25 @@
 
 html, body, #root { height: 100%; }
 :root { color-scheme: dark; }
+
+/* Force dark theme always */
+html {
+  color-scheme: dark !important;
+}
+
+html[data-theme="dark"],
+html.dark {
+  color-scheme: dark !important;
+}
+
+/* Override any light theme styles */
+html[data-theme="light"],
+html.light {
+  color-scheme: dark !important;
+}
+
+/* Ensure background stays dark */
+body {
+  background-color: #000 !important;
+  color: #fff !important;
+}
