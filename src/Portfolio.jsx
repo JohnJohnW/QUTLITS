@@ -7,8 +7,7 @@ import { Github, Linkedin, Mail, ArrowRight, Rocket, Sparkles, ChevronRight, Fol
 const DATA = {
   name: "John Wynter",
   role: "Law | IT",
-  blurb:
-    "QUT Bachelor of Laws/IT (Honours) student majoring in Information Systems. Building AI and automation solutions for legal workflows and SMBs, with experience across Python, n8n, AI agents, and privacy-focused compliance tooling.",
+  blurb: "",
   location: "Brisbane / Remote",
   avatar: "/personal_portfolio/headshot.png",
   socials: [
@@ -19,18 +18,63 @@ const DATA = {
   ],
   projects: [
     {
-      title: "Contract Clause Library",
-      tag: "2025 • React",
-      desc: "Responsive online library of reusable contract clauses for quick reference and drafting by legal teams.",
+      title: "The Sixth Man",
+      tag: "2025",
+      desc: "TAK Hack 2025 project: ATAK plugin using Raspberry Pi with camera and 3D printed casing for helmet/firearm attachment. Captures snapshots every 5 seconds, processes with local AI to identify people, hazards, and automatically places markers on ATAK map with HQ notifications.",
+      links: [],
+      stack: ["Python", "Raspberry Pi", "Computer Vision", "AI", "3D Printing", "ATAK", "Military Tech"],
+    },
+    {
+      title: "ecoSure",
+      tag: "2025",
+      desc: "Solo hackathon project for University of Queensland Sustainable Innovators Hackathon 2025: AI-powered environmental compliance tool for biodiversity and conservation projects. Cross-references project details against Queensland legislation and TERN datasets using RAG to flag compliance risks and biodiversity concerns.",
       links: [
-        { href: "https://johnjohnw.github.io/contract_clause_library/", label: "Live" },
-        { href: "https://github.com/JohnJohnW/contract_clause_library", label: "Repo" },
+        { href: "https://lnkd.in/g2yZh_Xv", label: "Demo" },
+        { href: "https://lnkd.in/gzXZ6GGr", label: "Repo" },
+        { href: "https://lnkd.in/gTkHcPJZ", label: "Video" },
       ],
-      stack: ["React", "HTML", "CSS"],
+      stack: ["AI", "RAG", "Python", "Environmental Law", "Compliance"],
+    },
+    {
+      title: "Cache to the Future",
+      tag: "2025",
+      desc: "Team solution for QUT Code Network Winter Hackathon 2025: a digital time capsule that encrypts messages and provides time-based decryption keys, plus an on-site decryption tool for downloaded files.",
+      links: [
+        { href: "https://github.com/mrjwei/cache-to-the-future", label: "Repo" },
+      ],
+      stack: ["React"],
+    },
+    {
+      title: "Federal Court Judgement Analysis",
+      tag: "2025",
+      desc: "Automated daily workflows involving analysis of the Federal Court judgements RSS feed using n8n and AI-agent integrations.",
+      links: [],
+      stack: ["n8n", "AI agents"],
+    },
+    {
+      title: "QITC Contract Automation",
+      tag: "2025",
+      desc: "Automated the document generation process for QITC comprehensive contracts using VBA and Doxsera templates.",
+      links: [],
+      stack: ["VBA", "Word / Doxsera"],
+    },
+    {
+      title: "MIT WIL Project Leadership (QUT)",
+      tag: "2024",
+      desc: "Organised and managed a WIL project for Masters IT students (Dundas Lawyers × QUT) involving an automated ERD program for forensic legal investigations using Python.",
+      links: [],
+      stack: [],
+    },
+    {
+      title: "Forensic Investigation Automation",
+      tag: "2024",
+      desc: "Developed a Python program to track availability/activity statuses of businesses during forensic legal investigations to inform legitimacy insights.",
+      links: [],
+      stack: ["Python"],
     },
     {
       title: "Telcom Compliance",
-      tag: "2025 • React",
+      tag: "2025",
       desc: "Static microsite with telecom compliance references. Lightweight demo resource and quick lookup tool.",
       links: [
         { href: "https://johnjohnw.github.io/telcom_compliance/", label: "Live" },
@@ -39,43 +83,21 @@ const DATA = {
       stack: ["React"],
     },
     {
-      title: "Cache to the Future",
-      tag: "2025 • Hackathon Project",
-      desc: "Team solution for QUT Code Network Winter Hackathon 2025: a digital time capsule that encrypts messages and provides time-based decryption keys, plus an on-site decryption tool for downloaded files.",
+      title: "Contract Clause Library",
+      tag: "2025",
+      desc: "Responsive online library of reusable contract clauses for quick reference and drafting by legal teams.",
       links: [
-        { href: "https://github.com/mrjwei/cache-to-the-future", label: "Repo" },
+        { href: "https://johnjohnw.github.io/contract_clause_library/", label: "Live" },
+        { href: "https://github.com/JohnJohnW/contract_clause_library", label: "Repo" },
       ],
-      stack: ["React", "JavaScript"],
+      stack: ["React"],
     },
-    {
-      title: "Federal Court Judgement Analysis",
-      tag: "2025 • n8n + Agents",
-      desc: "Automated daily workflows involving analysis of the Federal Court judgements RSS feed using n8n and AI-agent integrations.",
-      links: [],
-      stack: ["n8n", "AI agents", "Python"],
-    },
-    {
-      title: "QITC Contract Automation",
-      tag: "2025 • Legal Ops",
-      desc: "Automated the document generation process for QITC comprehensive contracts using VBA and Doxsera templates.",
-      links: [],
-      stack: ["VBA", "Word / Doxsera"],
-    },
-    {
-      title: "MIT WIL Project Leadership (QUT)",
-      tag: "2024 • Team Lead",
-      desc: "Organised and managed a WIL project for Masters IT students (Dundas Lawyers × QUT) involving an automated ERD program for forensic legal investigations using Python.",
-      links: [],
-      stack: ["Python"],
-    },
-    {
-      title: "Forensic Investigation Automation",
-      tag: "2024 • Python",
-      desc: "Developed a Python program to track availability/activity statuses of businesses during forensic legal investigations to inform legitimacy insights.",
-      links: [],
-      stack: ["Python"],
-    },
-  ],
+  ].sort((a, b) => {
+    // Sort by year (descending - newest first)
+    const yearA = parseInt(a.tag);
+    const yearB = parseInt(b.tag);
+    return yearB - yearA;
+  }),
 };
 
 // Cross-bundler base path (works with Vite, CRA, GH Pages)
@@ -191,9 +213,9 @@ function Tilt({ children }) {
   return <motion.div ref={ref} style={{ rotateX, rotateY, transformStyle: "preserve-3d" }}>{children}</motion.div>;
 }
 
-function Section({ id, title, icon: Icon, children, subtitle }) {
+function Section({ id, title, icon: Icon, children, subtitle, className = "" }) {
   return (
-    <section id={id} className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+    <section id={id} className={`relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20 ${className}`}>
       <motion.h2 initial={{ opacity: 0, y: 12 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.4 }}
         className="flex items-center gap-3 text-2xl sm:text-3xl font-semibold tracking-tight">
         {Icon && <Icon className="h-6 w-6" />} {title}
@@ -260,7 +282,7 @@ export default function Portfolio() {
                 { id: "projects", label: "Projects" },
                 { id: "videos", label: "Videos" },
                 { id: "experience", label: "Experience" },
-                { id: "contact", label: "Contact" },
+                { id: "education", label: "Education" },
               ].map((t) => (
                 <button key={t.id} onClick={scrollTo(t.id)}
                   className={cn("px-3 py-2 rounded-xl text-sm hover:bg-white/10 transition",
@@ -272,7 +294,7 @@ export default function Portfolio() {
             </nav>
             <div className="flex items-center gap-2">
               <a href="#contact" onClick={scrollTo("contact")} className="hidden sm:inline-flex items-center gap-2 rounded-xl border border-white/10 bg-white/5 px-3 py-2 text-sm hover:bg-white/10 transition">
-                <Sparkles className="h-4 w-4" /> Work with me
+                <Sparkles className="h-4 w-4" /> Contact
               </a>
             </div>
           </div>
@@ -288,8 +310,7 @@ export default function Portfolio() {
               <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 via-fuchsia-400 to-sky-400">{DATA.role}</span>
             </motion.h1>
-            <motion.p initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1 }}
-              className="mt-4 text-base/7 text-neutral-300">{DATA.blurb}</motion.p>
+
             <div className="mt-6 flex flex-wrap gap-3">
               <a href="#projects" onClick={scrollTo("projects")} className="inline-flex items-center gap-2 rounded-xl border border-white/10 bg-white/5 px-4 py-2 backdrop-blur-xl hover:bg-white/10 transition">
                 <Rocket className="h-4 w-4" /> Explore projects
@@ -329,7 +350,7 @@ export default function Portfolio() {
         </div>
       </section>
 
-      <Section id="projects" title="Projects" icon={Folder} subtitle="Selected work.">
+      <Section id="projects" title="Projects" icon={Folder} className="!pt-4 !pb-16">
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {DATA.projects.map((p, i) => (
             <motion.article key={p.title} initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.2 }} transition={{ delay: i * 0.03 }}
@@ -357,7 +378,25 @@ export default function Portfolio() {
         </div>
       </Section>
 
-      <Section id="videos" title="Videos" icon={PlaySquare} subtitle="Latest uploads.">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pb-12">
+        <motion.div initial={{ opacity: 0, scale: 0.98 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true, amount: 0.5 }}
+          className="relative overflow-hidden rounded-3xl border border-white/10 bg-gradient-to-tr from-indigo-500/20 via-fuchsia-500/20 to-sky-500/20 backdrop-blur-xl p-6">
+          <div className="absolute inset-0 pointer-events-none mix-blend-overlay opacity-60"
+               style={{ background: "url('data:image/svg+xml;utf8, %3Csvg width=\\\"60\\\" height=\\\"60\\\" viewBox=\\\"0 0 60 60\\\" xmlns=\\\"http://www.w3.org/2000/svg\\\"%3E%3Cg fill=\\\"none\\\" stroke=\\\"white\\\" stroke-opacity=\\\"0.06\\\"%3E%3Cpath d=\\\"M0 30h60M30 0v60\\\"/%3E%3C/g%3E%3C/svg%3E')"}} />
+          <div className="relative z-10 grid md:grid-cols-2 gap-6 items-center">
+            <div>
+              <h3 className="text-xl font-semibold">Let's build something great.</h3>
+            </div>
+            <div className="flex md:justify-end gap-3">
+              <a href="#contact" onClick={scrollTo("contact")} className="inline-flex items-center gap-2 rounded-xl bg-white/90 text-neutral-900 px-4 py-2 hover:bg-white">
+                <Wand2 className="h-4 w-4"/> Contact me
+              </a>
+            </div>
+          </div>
+        </motion.div>
+      </div>
+
+      <Section id="videos" title="Videos" icon={PlaySquare} className="!pt-4">
         <div className="rounded-3xl overflow-hidden border border-white/10 bg-white/5 backdrop-blur-xl">
           <div className="aspect-video w-full">
             <iframe
@@ -377,30 +416,51 @@ export default function Portfolio() {
         </div>
       </Section>
 
-      <Section id="experience" title="Experience" icon={Cpu} subtitle="Selected roles & impact.">
+      <Section id="experience" title="Experience" icon={Cpu} className="!pt-4">
         <div className="relative">
           <div className="absolute left-3 top-0 bottom-0 w-px bg-white/10" />
           <ul className="space-y-6">
             {[
               {
+                role: "Marketing Officer",
+                org: "QUT AI & ML Society",
+                when: "Aug 2025 — Present",
+              },
+              {
                 role: "Administrative Assistant",
                 org: "Dundas Lawyers",
                 when: "Mar 2024 — Present",
-                bullets: [
-                  "Built automations for content ops and compliance reporting",
-                  "Supported AI + data projects across marketing and legal ops",
-                ],
               },
               {
                 role: "Industry Coordinator",
                 org: "QUT Law, Innovation & Technology Society",
-                when: "2024 — Present",
-                bullets: [
-                  "Organised events",
-                  "Partnered with firms for student projects",
-                ],
+                when: "Jul 2025 — Present",
               },
-            ].map((e, i) => (
+            ].sort((a, b) => {
+              // Sort by date (newest first)
+              // Handle "Present" as current date
+              const getDate = (dateStr) => {
+                if (dateStr.includes("Present")) return new Date();
+                const [month, year] = dateStr.split(" ");
+                return new Date(parseInt(year), getMonthIndex(month), 1);
+              };
+              
+              const getMonthIndex = (month) => {
+                const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+                return months.indexOf(month);
+              };
+              
+              // For ongoing roles, sort by start date
+              const getStartDate = (dateStr) => {
+                const [month, year] = dateStr.split(" ");
+                return new Date(parseInt(year), getMonthIndex(month), 1);
+              };
+              
+              const aStart = getStartDate(a.when);
+              const bStart = getStartDate(b.when);
+              
+              return bStart - aStart;
+            }).map((e, i) => (
               <motion.li key={i} initial={{ opacity: 0, x: -12 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true, amount: 0.4 }} className="relative pl-10">
                 <div className="absolute left-0 top-1.5 h-6 w-6 rounded-xl bg-gradient-to-br from-indigo-500 via-fuchsia-500 to-sky-500 border border-white/20" />
                 <div className="rounded-2xl border border-white/10 bg-white/5 backdrop-blur-xl p-4">
@@ -408,9 +468,6 @@ export default function Portfolio() {
                     <p className="font-medium">{e.role} • {e.org}</p>
                     <span className="text-xs text-neutral-400">{e.when}</span>
                   </div>
-                  <ul className="mt-2 list-disc list-inside text-sm text-neutral-200/90">
-                    {e.bullets.map((b, j) => <li key={j}>{b}</li>)}
-                  </ul>
                 </div>
               </motion.li>
             ))}
@@ -418,52 +475,65 @@ export default function Portfolio() {
         </div>
       </Section>
 
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <motion.div initial={{ opacity: 0, scale: 0.98 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true, amount: 0.5 }}
-          className="relative overflow-hidden rounded-3xl border border-white/10 bg-gradient-to-tr from-indigo-500/20 via-fuchsia-500/20 to-sky-500/20 backdrop-blur-xl p-6">
-          <div className="absolute inset-0 pointer-events-none mix-blend-overlay opacity-60"
-               style={{ background: "url('data:image/svg+xml;utf8, %3Csvg width=\\\"60\\\" height=\\\"60\\\" viewBox=\\\"0 0 60 60\\\" xmlns=\\\"http://www.w3.org/2000/svg\\\"%3E%3Cg fill=\\\"none\\\" stroke=\\\"white\\\" stroke-opacity=\\\"0.06\\\"%3E%3Cpath d=\\\"M0 30h60M30 0v60\\\"/%3E%3C/g%3E%3C/svg%3E')"}} />
-          <div className="relative z-10 grid md:grid-cols-2 gap-6 items-center">
-            <div>
-              <h3 className="text-xl font-semibold">Let’s build something great.</h3>
-              <p className="mt-2 text-sm text-neutral-100/90">From prototypes to production. Privacy-first, automation-heavy, cleanly engineered.</p>
-            </div>
-            <div className="flex md:justify-end gap-3">
-              <a href="#contact" onClick={scrollTo("contact")} className="inline-flex items-center gap-2 rounded-xl bg-white/90 text-neutral-900 px-4 py-2 hover:bg-white">
-                <Wand2 className="h-4 w-4"/> Start a project
-              </a>
-            </div>
-          </div>
-        </motion.div>
-      </div>
+      <Section id="education" title="Education" icon={Wand2} className="!pt-4">
+        <div className="relative">
+          <div className="absolute left-3 top-0 bottom-0 w-px bg-white/10" />
+          <ul className="space-y-6">
+            {[
+              {
+                degree: "Bachelor of Information Technology (Information Systems)",
+                uni: "Queensland University of Technology",
+                when: "Expected 2026",
+              },
+              {
+                degree: "Bachelor of Laws (Honours)",
+                uni: "Queensland University of Technology",
+                when: "Expected 2028",
+              },
+            ].map((e, i) => (
+              <motion.li key={i} initial={{ opacity: 0, x: -12 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true, amount: 0.4 }} className="relative pl-10">
+                <div className="absolute left-0 top-1.5 h-6 w-6 rounded-xl bg-gradient-to-br from-indigo-500 via-fuchsia-500 to-sky-500 border border-white/20" />
+                <div className="rounded-2xl border border-white/10 bg-white/5 backdrop-blur-xl p-4">
+                  <div className="flex items-center justify-between">
+                    <div>
+                      <p className="font-medium">{e.degree}</p>
+                      <p className="text-sm text-neutral-400 mt-1">{e.uni}</p>
+                    </div>
+                    <span className="text-xs text-neutral-400">{e.when}</span>
+                  </div>
+                </div>
+              </motion.li>
+            ))}
+          </ul>
+        </div>
+      </Section>
 
-      <Section id="contact" title="Contact" icon={Phone} subtitle="Tell me about your idea. I’ll get back within a day.">
+      <Section id="contact" title="Contact" icon={Phone} className="!pt-4">
         <motion.form initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.4 }}
           onSubmit={onSubmit}
-          className="grid md:grid-cols-2 gap-4 rounded-3xl border border-white/10 bg-white/5 backdrop-blur-xl p-6">
-          <div className="grid gap-3">
-            <label className="text-sm">Name
-              <input name="name" required className="mt-1 w-full rounded-xl bg-black/30 border border-white/10 px-3 py-2 outline-none focus:ring-2 focus:ring-indigo-500" />
-            </label>
-            <label className="text-sm">Email
-              <input name="email" type="email" required className="mt-1 w-full rounded-xl bg-black/30 border border-white/10 px-3 py-2 outline-none focus:ring-2 focus:ring-indigo-500" />
-            </label>
-            <label className="text-sm">Budget
-              <select name="budget" className="mt-1 w-full rounded-xl bg-black/30 border border-white/10 px-3 py-2">
-                <option>Undecided</option>
-                <option>$2k–$5k</option>
-                <option>$5k–$15k</option>
-                <option>$15k+</option>
-              </select>
-            </label>
-          </div>
-          <div className="grid gap-3">
-            <label className="text-sm">Project details
-              <textarea name="message" rows={7} className="mt-1 w-full rounded-xl bg-black/30 border border-white/10 px-3 py-2 outline-none focus:ring-2 focus:ring-indigo-500" placeholder="What are we building?" />
-            </label>
-            <div className="flex justify-end">
-              <button className="inline-flex items-center gap-2 rounded-xl bg-gradient-to-tr from-indigo-500 via-fuchsia-500 to-sky-500 px-4 py-2 text-white shadow-lg hover:opacity-90">
-                <Rocket className="h-4 w-4"/> Send
+          className="max-w-2xl mx-auto rounded-3xl border border-white/10 bg-white/5 backdrop-blur-xl p-8">
+          <div className="grid gap-6">
+            <div className="grid gap-3">
+              <label className="text-sm font-medium">Name
+                <input name="name" required className="mt-2 w-full rounded-xl bg-black/30 border border-white/10 px-4 py-3 outline-none focus:ring-2 focus:ring-indigo-500 transition-all" />
+              </label>
+            </div>
+            
+            <div className="grid gap-3">
+              <label className="text-sm font-medium">Email
+                <input name="email" type="email" required className="mt-2 w-full rounded-xl bg-black/30 border border-white/10 px-4 py-3 outline-none focus:ring-2 focus:ring-indigo-500 transition-all" />
+              </label>
+            </div>
+            
+            <div className="grid gap-3">
+              <label className="text-sm font-medium">Message
+                <textarea name="message" rows={6} className="mt-2 w-full rounded-xl bg-black/30 border border-white/10 px-4 py-3 outline-none focus:ring-2 focus:ring-indigo-500 transition-all resize-none" placeholder="Your message..." />
+              </label>
+            </div>
+            
+            <div className="flex justify-end pt-2">
+              <button className="inline-flex items-center gap-2 rounded-xl bg-gradient-to-tr from-indigo-500 via-fuchsia-500 to-sky-500 px-6 py-3 text-white shadow-lg hover:opacity-90 transition-all">
+                <Rocket className="h-4 w-4"/> Send Message
               </button>
             </div>
           </div>
@@ -484,7 +554,9 @@ export default function Portfolio() {
           <span>© {new Date().getFullYear()} {DATA.name}. All rights reserved.</span>
           <div className="flex items-center gap-3">
             {DATA.socials.map((s) => (
-              <a key={s.label} href={s.href} className="hover:text-white">{s.label}</a>
+              <a key={s.label} href={s.href} className="hover:text-white transition-colors" aria-label={s.label}>
+                <s.icon className="h-5 w-5" />
+              </a>
             ))}
           </div>
         </div>
@@ -495,6 +567,7 @@ export default function Portfolio() {
         { icon: Folder, label: "Projects", onClick: scrollTo("projects") },
         { icon: PlaySquare, label: "Videos", onClick: scrollTo("videos") },
         { icon: Cpu, label: "Experience", onClick: scrollTo("experience") },
+        { icon: Wand2, label: "Education", onClick: scrollTo("education") },
         { icon: Phone, label: "Contact", onClick: scrollTo("contact") },
       ]} />
     </div>
