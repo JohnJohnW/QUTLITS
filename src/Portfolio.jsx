@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import { motion, AnimatePresence, useMotionValue, useTransform } from "framer-motion";
-import { Github, Linkedin, Mail, ArrowRight, Rocket, Sparkles, ChevronRight, Folder, Cpu, Wand2, Download, Phone, PlaySquare, Youtube } from "lucide-react";
+import { Github, Linkedin, Mail, ArrowRight, Rocket, Sparkles, ChevronRight, Folder, Cpu, Wand2, Phone, PlaySquare, Youtube } from "lucide-react";
 
 /* Personal portfolio — GH Pages + Web3Forms */
 
@@ -11,7 +11,6 @@ const DATA = {
     "QUT Bachelor of Laws/IT (Honours) student majoring in Information Systems. Building AI and automation solutions for legal workflows and SMBs, with experience across Python, n8n, AI agents, and privacy-focused compliance tooling.",
   location: "Brisbane / Remote",
   avatar: "/personal_portfolio/headshot.png",
-  resume: "/personal_portfolio/John_Wynter_Resume.pdf",
   socials: [
     { icon: Github, label: "GitHub", href: "https://github.com/JohnJohnW" },
     { icon: Linkedin, label: "LinkedIn", href: "https://www.linkedin.com/in/john-wynter/" },
@@ -415,9 +414,6 @@ export default function Portfolio() {
             <div className="flex md:justify-end gap-3">
               <a href="#contact" onClick={scrollTo("contact")} className="inline-flex items-center gap-2 rounded-xl bg-white/90 text-neutral-900 px-4 py-2 hover:bg-white">
                 <Wand2 className="h-4 w-4"/> Start a project
-              </a>
-              <a href={DATA.resume} className="inline-flex items-center gap-2 rounded-xl border border-white/10 bg-white/5 px-4 py-2 backdrop-blur-xl hover:bg-white/10">
-                <Download className="h-4 w-4"/> Download CV
               </a>
             </div>
           </div>
