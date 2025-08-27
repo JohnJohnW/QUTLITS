@@ -45,7 +45,7 @@ const BANNER_SLIDES = [
     subtitle: "Connect with Industry Leaders",
     description: "Build your professional network with legal tech startups, law firms, and technology companies. Discover opportunities in tech law, regulatory compliance, and innovation policy.",
     image: "/headshot.png",
-    cta: "Join Network",
+    cta: "Connect Now",
     link: "/join",
     techIcons: [Network, Globe, Briefcase]
   }
@@ -56,7 +56,7 @@ const BENEFITS = [
   {
     icon: Brain,
     title: "Legal Tech & AI Mastery",
-    description: "Master emerging technologies reshaping the legal industry through hands-on workshops and real-world projects",
+    description: "Master cutting-edge technologies reshaping the legal industry through hands-on workshops and real-world projects",
     color: "primary",
     features: ["Machine Learning", "Contract Analysis", "Legal Research AI"],
     techElements: [Cpu, Database, Search]
@@ -64,7 +64,7 @@ const BENEFITS = [
   {
     icon: Code,
     title: "Tech Law & Innovation",
-    description: "Develop expertise in the legal frameworks governing technology, from AI regulation to blockchain law",
+    description: "Develop expertise in the legal frameworks governing technology, from AI regulation to blockchain law and beyond",
     color: "secondary",
     features: ["Regulatory Compliance", "Tech Policy", "Innovation Law"],
     techElements: [GitBranch, Layers, Cpu]
@@ -80,7 +80,7 @@ const BENEFITS = [
   {
     icon: Target,
     title: "Dual Career Pathways",
-    description: "Navigate both legal tech development and tech law careers with mentorship and industry connections",
+    description: "Navigate both legal tech development and tech law careers with expert mentorship and industry connections",
     color: "orange",
     features: ["Industry Insights", "Mentorship", "Job Placement"],
     techElements: [TrendingUp, Briefcase, Network]
