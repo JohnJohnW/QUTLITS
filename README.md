@@ -61,7 +61,7 @@ This project is automatically deployed to GitHub Pages via GitHub Actions. Simpl
 
 Visit the live site: [https://JohnJohnW.github.io/QUTLITS](https://JohnJohnW.github.io/QUTLITS)
 
-> **Note**: The site is automatically deployed from the main branch. Each push triggers a new build and deployment.
+> **Note**: The site is automatically deployed from the main branch using GitHub Actions. Each push triggers a new build and deployment.
 
 ## License
 
