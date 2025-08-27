@@ -1,6 +1,6 @@
 {
-  "name": "John Wynter Portfolio",
-  "short_name": "Portfolio",
+  "name": "QUT LITS — Law, Innovation & Technology Society",
+  "short_name": "QUT LITS",
   "icons": [
     {
       "src": "/apple-touch-icon.png",
@@ -13,7 +13,7 @@
       "type": "image/x-icon"
     }
   ],
-  "theme_color": "#ffffff",
-  "background_color": "#ffffff",
+  "theme_color": "#120458",
+  "background_color": "#0a0a0a",
   "display": "standalone"
 }

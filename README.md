@@ -1,17 +1,66 @@
-# John Wynter — Personal Portfolio
+# QUT LITS Personal Portfolio
 
-Deployed to GitHub Pages under `/personal_portfolio/` with a workflow.
+A modern, responsive personal portfolio website built with React, Vite, and Tailwind CSS.
 
-## Local dev
+## Features
+
+- 🎨 Modern, responsive design
+- 🚀 Built with React 18 and Vite
+- 🎭 Smooth animations with Framer Motion
+- 📱 Mobile-first approach with Tailwind CSS
+- 🧭 Client-side routing with React Router
+
+## Tech Stack
+
+- **Frontend**: React 18
+- **Build Tool**: Vite
+- **Styling**: Tailwind CSS
+- **Animations**: Framer Motion
+- **Icons**: Lucide React
+- **Routing**: React Router DOM
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js 18+ 
+- npm or yarn
+
+### Installation
+
+1. Clone the repository:
 ```bash
-npm i
+git clone https://github.com/YOUR_USERNAME/QUTLITS.git
+cd QUTLITS
+```
+
+2. Install dependencies:
+```bash
+npm install
+```
+
+3. Start the development server:
+```bash
 npm run dev
 ```
 
-## Build
-```bash
-npm run build
-```
+4. Open [http://localhost:5173](http://localhost:5173) in your browser.
 
-## Deploy
-Push to `main` and GitHub Actions will build and publish.
+## Available Scripts
+
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run preview` - Preview production build
+- `npm run deploy` - Deploy to GitHub Pages
+
+## Deployment
+
+This project is automatically deployed to GitHub Pages via GitHub Actions. Simply push to the main branch and the site will be automatically built and deployed.
+
+## Live Demo
+
+Visit the live site: [https://YOUR_USERNAME.github.io/QUTLITS](https://YOUR_USERNAME.github.io/QUTLITS)
+
+## License
+
+This project is open source and available under the [MIT License](LICENSE).
