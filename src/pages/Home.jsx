@@ -71,10 +71,10 @@ const BENEFITS = [
   },
   {
     icon: Rocket,
-    title: "Innovation Lab Access",
-    description: "Access cutting-edge tools and experimental legal tech in our dedicated innovation space",
+    title: "Innovation & Entrepreneurship",
+    description: "Access cutting-edge tools and build innovative solutions at the intersection of law and technology",
     color: "purple",
-    features: ["Prototyping", "Testing", "Innovation"],
+    features: ["Prototyping", "Startup Support", "Innovation"],
     techElements: [Zap, Sparkles, Target]
   },
   {
