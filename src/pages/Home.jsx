@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import { Link, useNavigate } from "react-router-dom";
 import { ArrowRight, Users, Calendar, Award, BookOpen, Briefcase, Globe, Zap, Network, Scale, Cpu, Database, Brain, Code, Rocket, Search, GitBranch, Layers, Sparkles, Target, TrendingUp, Shield, Eye, Lock } from "lucide-react";
@@ -384,9 +384,6 @@ function CTASection() {
   
   const handleJoinClick = () => {
     navigate('/');
-    setTimeout(() => {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    }, 100);
   };
 
   return (
@@ -422,6 +419,11 @@ function CTASection() {
 }
 
 function Home() {
+  // Scroll to top when Home page loads
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-dark-blue via-dark-purple to-dark-blue">
       <Navigation />

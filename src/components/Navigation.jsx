@@ -20,9 +20,6 @@ function Navigation() {
 
   const handleJoinClick = () => {
     navigate('/');
-    setTimeout(() => {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    }, 100);
   };
 
   const navigationItems = [

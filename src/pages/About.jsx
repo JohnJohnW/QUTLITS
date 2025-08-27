@@ -287,9 +287,6 @@ function CTASection() {
   
   const handleJoinClick = () => {
     navigate('/');
-    setTimeout(() => {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    }, 100);
   };
 
   return (
