@@ -8,49 +8,49 @@ import Navigation from "../components/Navigation";
 const LEARNING_TOPICS = [
   {
     icon: Brain,
-    title: "AI & Machine Learning",
-    description: "Master artificial intelligence and machine learning applications in legal practice",
+    title: "placeholder",
+    description: "placeholder",
     color: "primary",
     resources: [
-      { title: "Introduction to AI in Law", type: "Video", duration: "45 min", level: "Beginner" },
-      { title: "Machine Learning for Legal Research", type: "Tutorial", duration: "2 hours", level: "Intermediate" },
-      { title: "AI Ethics in Legal Practice", type: "Article", duration: "15 min", level: "All Levels" }
+      { title: "placeholder", type: "placeholder", duration: "placeholder", level: "placeholder" },
+      { title: "placeholder", type: "placeholder", duration: "placeholder", level: "placeholder" },
+      { title: "placeholder", type: "placeholder", duration: "placeholder", level: "placeholder" }
     ],
     techIcons: [Cpu, Database, Search]
   },
   {
     icon: Code,
-    title: "Programming & Automation",
-    description: "Learn coding skills to automate legal processes and build legal tech tools",
+    title: "placeholder",
+    description: "placeholder",
     color: "secondary",
     resources: [
-      { title: "Python for Lawyers", type: "Course", duration: "8 hours", level: "Beginner" },
-      { title: "Legal API Integration", type: "Workshop", duration: "3 hours", level: "Intermediate" },
-      { title: "Building Legal Chatbots", type: "Project", duration: "6 hours", level: "Advanced" }
+      { title: "placeholder", type: "placeholder", duration: "placeholder", level: "placeholder" },
+      { title: "placeholder", type: "placeholder", duration: "placeholder", level: "placeholder" },
+      { title: "placeholder", type: "placeholder", duration: "placeholder", level: "placeholder" }
     ],
     techIcons: [GitBranch, Layers, Cpu]
   },
   {
     icon: Rocket,
-    title: "Innovation & Design Thinking",
-    description: "Develop innovative thinking and design skills for legal technology solutions",
+    title: "placeholder",
+    description: "placeholder",
     color: "purple",
     resources: [
-      { title: "Design Thinking in Law", type: "Workshop", duration: "4 hours", level: "All Levels" },
-      { title: "Legal Tech Prototyping", type: "Hands-on", duration: "5 hours", level: "Intermediate" },
-      { title: "Innovation Lab Projects", type: "Collaborative", duration: "10 hours", level: "Advanced" }
+      { title: "placeholder", type: "placeholder", duration: "placeholder", level: "placeholder" },
+      { title: "placeholder", type: "placeholder", duration: "placeholder", level: "placeholder" },
+      { title: "placeholder", type: "placeholder", duration: "placeholder", level: "placeholder" }
     ],
     techIcons: [Zap, Sparkles, Target]
   },
   {
     icon: Target,
-    title: "Career Development",
-    description: "Navigate your career path in legal technology with industry insights and mentorship",
+    title: "placeholder",
+    description: "placeholder",
     color: "orange",
     resources: [
-      { title: "Legal Tech Career Guide", type: "Guide", duration: "30 min", level: "All Levels" },
-      { title: "Industry Networking", type: "Event", duration: "2 hours", level: "All Levels" },
-      { title: "Portfolio Building", type: "Workshop", duration: "4 hours", level: "Intermediate" }
+      { title: "placeholder", type: "placeholder", duration: "placeholder", level: "placeholder" },
+      { title: "placeholder", type: "placeholder", duration: "placeholder", level: "placeholder" },
+      { title: "placeholder", type: "placeholder", duration: "placeholder", level: "placeholder" }
     ],
     techIcons: [TrendingUp, Briefcase, Network]
   }
@@ -58,54 +58,54 @@ const LEARNING_TOPICS = [
 
 const FEATURED_RESOURCES = [
   {
-    title: "Legal Tech Fundamentals",
-    description: "A comprehensive introduction to legal technology concepts, tools, and applications",
+    title: "placeholder",
+    description: "placeholder",
     image: "/headshot.png",
-    category: "Foundation",
-    readTime: "2 hours",
-    level: "Beginner",
+    category: "placeholder",
+    readTime: "placeholder",
+    level: "placeholder",
     techIcons: [Scale, Cpu, Database]
   },
   {
-    title: "AI Ethics in Legal Practice",
-    description: "Understanding the ethical implications of AI adoption in legal practice and decision-making",
+    title: "placeholder",
+    description: "placeholder",
     image: "/headshot.png",
-    category: "Ethics",
-    readTime: "1.5 hours",
-    level: "All Levels",
+    category: "placeholder",
+    readTime: "placeholder",
+    level: "placeholder",
     techIcons: [Brain, Shield, Eye]
   },
   {
-    title: "Blockchain & Smart Contracts",
-    description: "How blockchain technology is revolutionizing contract law and automated execution",
+    title: "placeholder",
+    description: "placeholder",
     image: "/headshot.png",
-    category: "Technology",
-    readTime: "3 hours",
-    level: "Intermediate",
+    category: "placeholder",
+    readTime: "placeholder",
+    level: "placeholder",
     techIcons: [Layers, Lock, Code]
   }
 ];
 
 const LEARNING_PATHS = [
   {
-    title: "Legal Tech Beginner",
-    description: "Start your journey in legal technology with foundational concepts and basic tools",
-    duration: "4-6 weeks",
-    courses: ["Legal Tech Fundamentals", "AI Basics", "Programming Introduction"],
+    title: "placeholder",
+    description: "placeholder",
+    duration: "placeholder",
+    courses: ["placeholder", "placeholder", "placeholder"],
     icon: BookOpen
   },
   {
-    title: "AI & Legal Tech Specialist",
-    description: "Deep dive into artificial intelligence applications in legal practice",
-    duration: "8-10 weeks",
-    courses: ["Machine Learning", "AI Ethics", "Legal Research AI", "Contract Analysis"],
+    title: "placeholder",
+    description: "placeholder",
+    duration: "placeholder",
+    courses: ["placeholder", "placeholder", "placeholder", "placeholder"],
     icon: Brain
   },
   {
-    title: "Legal Tech Developer",
-    description: "Build technical skills to create legal technology solutions and tools",
-    duration: "12-16 weeks",
-    courses: ["Python Programming", "API Integration", "Web Development", "Legal Tech Projects"],
+    title: "placeholder",
+    description: "placeholder",
+    duration: "placeholder",
+    courses: ["placeholder", "placeholder", "placeholder", "placeholder"],
     icon: Code
   }
 ];
@@ -384,37 +384,29 @@ function Learn() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20">
+      <section className="py-24 bg-gradient-to-r from-primary/10 to-purple/10">
         <div className="max-w-4xl mx-auto px-6 text-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
-            className="bg-white/5 backdrop-blur-sm rounded-3xl p-16 border border-white/10"
+            className="liquid-glass-strong rounded-3xl p-16 border border-white/20 shadow-2xl"
           >
             <h2 className="text-4xl font-bold text-white mb-6 font-tomorrow">
-              Ready to Start Learning?
+              Ready to Shape the Future?
             </h2>
             <p className="text-xl text-white/80 mb-10 font-montserrat max-w-2xl mx-auto leading-relaxed">
-              Join QUT LITS today and gain access to all our learning resources, workshops, and expert guidance.
+              Join QUT LITS today and become part of a community that's driving innovation 
+              at the intersection of law and technology.
             </p>
             
-            <div className="flex flex-col sm:flex-row gap-6 justify-center">
+            <div className="flex justify-center">
               <Link
                 to="/join"
-                className="group relative inline-flex items-center gap-3 bg-gradient-to-r from-primary to-purple text-white px-10 py-5 rounded-2xl text-xl font-semibold hover:from-primary/90 hover:to-purple/90 transition-all duration-300 shadow-2xl hover:shadow-primary/25 font-rubik overflow-hidden"
+                className="group relative inline-flex items-center bg-gradient-to-r from-primary to-purple text-white px-10 py-5 rounded-2xl text-xl font-semibold hover:from-primary/90 hover:to-purple/90 transition-all duration-300 shadow-2xl hover:shadow-primary/25 font-rubik overflow-hidden"
               >
                 <span className="relative z-10">Join Now</span>
-                <ArrowRight className="h-5 w-5 relative z-10 group-hover:translate-x-1 transition-transform duration-300" />
-              </Link>
-              
-              <Link
-                to="/events"
-                className="group inline-flex items-center gap-3 border-2 border-white/30 text-white px-10 py-5 rounded-2xl text-xl font-semibold hover:bg-white/10 hover:border-white/50 transition-all duration-300 backdrop-blur-sm font-rubik hover:scale-105"
-              >
-                View Events
-                <ArrowRight className="h-5 w-5 relative z-10 group-hover:translate-x-1 transition-transform duration-300" />
               </Link>
             </div>
           </motion.div>
