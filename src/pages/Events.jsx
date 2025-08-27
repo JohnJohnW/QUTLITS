@@ -7,91 +7,91 @@ import Navigation from "../components/Navigation";
 // Events data
 const UPCOMING_EVENTS = [
   {
-    title: "AI in Legal Practice Workshop",
-    date: "March 15, 2025",
-    time: "2:00 PM - 5:00 PM",
-    location: "QUT Innovation Lab",
-    type: "Workshop",
-    spots: "Limited spots available",
-    description: "Learn how AI is transforming legal research, contract analysis, and case management. Get hands-on experience with cutting-edge legal tech tools.",
+    title: "placeholder",
+    date: "placeholder",
+    time: "placeholder",
+    location: "placeholder",
+    type: "placeholder",
+    spots: "placeholder",
+    description: "placeholder",
     techIcons: [Brain, Cpu, Database],
-    category: "AI & Legal Tech"
+    category: "placeholder"
   },
   {
-    title: "Legal Tech Industry Night",
-    date: "March 28, 2025",
-    time: "6:00 PM - 9:00 PM",
-    location: "Virtual Event",
-    type: "Networking",
-    spots: "Open to all members",
-    description: "Connect with legal tech startups, law firms, and technology companies. Discover internship and career opportunities in this rapidly growing field.",
+    title: "placeholder",
+    date: "placeholder",
+    time: "placeholder",
+    location: "placeholder",
+    type: "placeholder",
+    spots: "placeholder",
+    description: "placeholder",
     techIcons: [Network, Globe, Briefcase],
-    category: "Networking"
+    category: "placeholder"
   },
   {
-    title: "Legal Tech Hackathon 2025",
-    date: "April 10-12, 2025",
-    time: "48-hour event",
-    location: "QUT Innovation Lab",
-    type: "Competition",
-    spots: "Team registration required",
-    description: "Build innovative solutions for real legal challenges using technology. Compete for prizes and recognition from industry leaders.",
+    title: "placeholder",
+    date: "placeholder",
+    time: "placeholder",
+    location: "placeholder",
+    type: "placeholder",
+    spots: "placeholder",
+    description: "placeholder",
     techIcons: [Code, Rocket, Target],
-    category: "Competition"
+    category: "placeholder"
   },
   {
-    title: "Blockchain & Smart Contracts Seminar",
-    date: "April 25, 2025",
-    time: "1:00 PM - 4:00 PM",
-    location: "QUT Law Building",
-    type: "Seminar",
-    spots: "Open to all members",
-    description: "Explore how blockchain technology is revolutionizing contract law and execution. Learn about smart contracts and their legal implications.",
+    title: "placeholder",
+    date: "placeholder",
+    time: "placeholder",
+    location: "placeholder",
+    type: "placeholder",
+    spots: "placeholder",
+    description: "placeholder",
     techIcons: [Layers, Lock, Code],
-    category: "Technology"
+    category: "placeholder"
   },
   {
-    title: "Legal Tech Career Fair",
-    date: "May 8, 2025",
-    time: "10:00 AM - 3:00 PM",
-    location: "QUT Gardens Point",
-    type: "Career Fair",
-    spots: "Open to all students",
-    description: "Meet with leading legal tech companies, law firms, and startups. Discover internship and graduate opportunities in legal technology.",
+    title: "placeholder",
+    date: "placeholder",
+    time: "placeholder",
+    location: "placeholder",
+    type: "placeholder",
+    spots: "placeholder",
+    description: "placeholder",
     techIcons: [Briefcase, Network, TrendingUp],
-    category: "Career"
+    category: "placeholder"
   },
   {
-    title: "Ethics in AI Law Panel Discussion",
-    date: "May 20, 2025",
-    time: "6:00 PM - 8:00 PM",
-    location: "QUT Innovation Lab",
-    type: "Panel Discussion",
-    spots: "Open to all members",
-    description: "Join industry experts for a thought-provoking discussion on the ethical implications of AI adoption in legal practice.",
+    title: "placeholder",
+    date: "placeholder",
+    time: "placeholder",
+    location: "placeholder",
+    type: "placeholder",
+    spots: "placeholder",
+    description: "placeholder",
     techIcons: [Brain, Shield, Eye],
-    category: "Ethics"
+    category: "placeholder"
   }
 ];
 
 const PAST_EVENTS = [
   {
-    title: "Legal Tech Trends 2024",
-    date: "December 15, 2024",
-    attendees: "150+",
-    highlights: ["AI-powered research tools", "Blockchain applications", "Future of legal automation"]
+    title: "placeholder",
+    date: "placeholder",
+    attendees: "placeholder",
+    highlights: ["placeholder", "placeholder", "placeholder"]
   },
   {
-    title: "Legal Tech Startup Pitch Night",
-    date: "November 30, 2024",
-    attendees: "200+",
-    highlights: ["5 startup presentations", "Investor networking", "Innovation showcase"]
+    title: "placeholder",
+    date: "placeholder",
+    attendees: "placeholder",
+    highlights: ["placeholder", "placeholder", "placeholder"]
   },
   {
-    title: "Legal Tech Skills Bootcamp",
-    date: "October 20-22, 2024",
-    attendees: "80+",
-    highlights: ["Python for lawyers", "API integration", "Automation workflows"]
+    title: "placeholder",
+    date: "placeholder",
+    attendees: "placeholder",
+    highlights: ["placeholder", "placeholder", "placeholder"]
   }
 ];
 

@@ -90,33 +90,33 @@ const BENEFITS = [
 // Upcoming events data
 const UPCOMING_EVENTS = [
   {
-    title: "AI & Legal Innovation Workshop",
-    date: "March 15, 2025",
-    time: "2:00 PM - 5:00 PM",
-    location: "QUT Innovation Lab",
-    type: "Workshop",
-    spots: "Limited spots available",
-    description: "Learn how AI is transforming legal research and explore the regulatory frameworks governing AI adoption in legal practice.",
+    title: "placeholder",
+    date: "placeholder",
+    time: "placeholder",
+    location: "placeholder",
+    type: "placeholder",
+    spots: "placeholder",
+    description: "placeholder",
     techIcons: [Brain, Cpu, Database]
   },
   {
-    title: "Tech Law & Innovation Night",
-    date: "March 28, 2025",
-    time: "6:00 PM - 9:00 PM",
-    location: "Virtual Event",
-    type: "Networking",
-    spots: "Open to all members",
-    description: "Connect with legal tech startups, law firms, and technology companies. Discover opportunities in both legal tech development and tech law careers.",
+    title: "placeholder",
+    date: "placeholder",
+    time: "placeholder",
+    location: "placeholder",
+    type: "placeholder",
+    spots: "placeholder",
+    description: "placeholder",
     techIcons: [Network, Globe, Briefcase]
   },
   {
-    title: "Legal Tech & Innovation Hackathon 2025",
-    date: "April 10-12, 2025",
-    time: "48-hour event",
-    location: "QUT Innovation Lab",
-    type: "Competition",
-    spots: "Team registration required",
-    description: "Build innovative solutions for real legal challenges using technology. Compete for prizes and recognition from industry leaders.",
+    title: "placeholder",
+    date: "placeholder",
+    time: "placeholder",
+    location: "placeholder",
+    type: "placeholder",
+    spots: "placeholder",
+    description: "placeholder",
     techIcons: [Code, Rocket, Target]
   }
 ];
