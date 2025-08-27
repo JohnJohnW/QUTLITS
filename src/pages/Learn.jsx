@@ -402,12 +402,12 @@ function Learn() {
             </p>
             
             <div className="flex justify-center">
-              <Link
-                to="/"
+              <button
+                onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
                 className="group relative inline-flex items-center bg-gradient-to-r from-primary to-purple text-white px-10 py-5 rounded-2xl text-xl font-semibold hover:from-primary/90 hover:to-purple/90 transition-all duration-300 shadow-2xl hover:shadow-primary/25 font-rubik overflow-hidden"
               >
                 <span className="relative z-10">Join Now</span>
-              </Link>
+              </button>
             </div>
           </motion.div>
         </div>

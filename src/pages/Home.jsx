@@ -380,6 +380,10 @@ function EventsSection() {
 }
 
 function CTASection() {
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   return (
     <section className="py-24 bg-gradient-to-r from-primary/10 to-purple/10">
       <div className="max-w-4xl mx-auto px-6 text-center">
@@ -399,12 +403,12 @@ function CTASection() {
           </p>
           
           <div className="flex justify-center">
-            <Link
-              to="/"
+            <button
+              onClick={scrollToTop}
               className="group relative inline-flex items-center bg-gradient-to-r from-primary to-purple text-white px-10 py-5 rounded-2xl text-xl font-semibold hover:from-primary/90 hover:to-purple/90 transition-all duration-300 shadow-2xl hover:shadow-primary/25 font-rubik overflow-hidden"
             >
               <span className="relative z-10">Join Now</span>
-            </Link>
+            </button>
           </div>
         </motion.div>
       </div>

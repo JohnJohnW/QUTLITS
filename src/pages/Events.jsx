@@ -301,13 +301,13 @@ function Events() {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
-              <Link
-                to="/"
+              <button
+                onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
                 className="group relative inline-flex items-center gap-3 bg-gradient-to-r from-primary to-purple text-white px-10 py-5 rounded-2xl text-xl font-semibold hover:from-primary/90 hover:to-purple/90 transition-all duration-300 shadow-2xl hover:shadow-primary/25 font-rubik overflow-hidden"
               >
                 <span className="relative z-10">Join QUT LITS</span>
                 <ArrowRight className="h-5 w-5 relative z-10 group-hover:translate-x-1 transition-transform duration-300" />
-              </Link>
+              </button>
               
               <Link
                 to="/contact"

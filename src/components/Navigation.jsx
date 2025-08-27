@@ -59,12 +59,12 @@ function Navigation() {
           </div>
 
           <div className="flex items-center gap-4">
-            <Link
-              to="/"
+            <button
+              onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
               className="bg-gradient-to-r from-primary to-purple text-white px-6 py-3 rounded-xl font-semibold hover:from-primary/90 hover:to-purple/90 transition-all duration-300 font-rubik shadow-lg hover:shadow-xl hover:scale-105"
             >
               Join Now
-            </Link>
+            </button>
 
             {/* Mobile Menu Button */}
             <button
