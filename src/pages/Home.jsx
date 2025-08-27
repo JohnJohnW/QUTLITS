@@ -8,7 +8,7 @@ import Navigation from "../components/Navigation";
 const HERO_DATA = {
   title: "QUT LITS",
   subtitle: "Law, Innovation & Technology Society",
-  description: "Empowering QUT students to become the next generation of legal tech innovators. Master AI-powered legal tools, blockchain contracts, and emerging technologies that are reshaping the legal industry.",
+  description: "Empowering QUT students to become the next generation of legal tech and tech law innovators",
   cta: "Join Our Community",
   stats: [
     { number: "500+", label: "Active Members", icon: Users },
