@@ -8,11 +8,12 @@ import Contact from './pages/Contact'
 
 // Component to scroll to top on route change
 function ScrollToTop() {
-  const { pathname } = useLocation()
+  const location = useLocation()
   
   useEffect(() => {
+    // Force scroll to top on every navigation
     window.scrollTo(0, 0)
-  }, [pathname])
+  }, [location]) // Use entire location object to detect all changes
   
   return null
 }
