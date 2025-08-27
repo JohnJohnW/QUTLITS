@@ -22,34 +22,86 @@
 
 html, body, #root { 
   height: 100%; 
+  margin: 0;
+  padding: 0;
 }
 
-/* Hide scrollbar but maintain scroll functionality */
+/* Hide scrollbar but maintain scroll functionality - Comprehensive approach */
 html {
   scrollbar-width: none; /* Firefox */
   -ms-overflow-style: none; /* Internet Explorer 10+ */
+  overflow-x: hidden;
 }
 
 html::-webkit-scrollbar {
   display: none; /* Chrome, Safari, Opera */
+  width: 0;
+  height: 0;
 }
 
 body {
   scrollbar-width: none; /* Firefox */
   -ms-overflow-style: none; /* Internet Explorer 10+ */
+  overflow-x: hidden; /* Prevent horizontal scrollbar */
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  max-width: 100vw;
 }
 
 body::-webkit-scrollbar {
   display: none; /* Chrome, Safari, Opera */
+  width: 0;
+  height: 0;
 }
 
 #root {
   scrollbar-width: none; /* Firefox */
   -ms-overflow-style: none; /* Internet Explorer 10+ */
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 100vw;
 }
 
 #root::-webkit-scrollbar {
   display: none; /* Chrome, Safari, Opera */
+  width: 0;
+  height: 0;
+}
+
+/* Hide scrollbars on all elements */
+* {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+}
+
+*::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+  width: 0;
+  height: 0;
+}
+
+/* Ensure no horizontal overflow */
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 100vw;
+}
+
+/* Force hide scrollbars on specific elements that commonly cause issues */
+div, section, main, aside, article {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+div::-webkit-scrollbar,
+section::-webkit-scrollbar,
+main::-webkit-scrollbar,
+aside::-webkit-scrollbar,
+article::-webkit-scrollbar {
+  display: none;
+  width: 0;
+  height: 0;
 }
 
 :root { 
