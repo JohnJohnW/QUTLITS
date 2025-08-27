@@ -39,7 +39,7 @@ function Navigation() {
         <div className="flex items-center justify-between h-20">
           <Link to="/" className="flex items-center gap-3 group">
             <div className="relative">
-              <img src="/favicon.ico" alt="QUT LITS" className="h-10 w-10 rounded-xl transition-transform duration-300 group-hover:scale-110" />
+              <img src="./favicon.ico" alt="QUT LITS" className="h-10 w-10 rounded-xl transition-transform duration-300 group-hover:scale-110" />
             </div>
             <span className="text-xl font-bold text-white font-tomorrow">QUT LITS</span>
           </Link>
