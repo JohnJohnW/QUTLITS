@@ -8,7 +8,7 @@ import Navigation from "../components/Navigation";
 const HERO_DATA = {
   title: "QUT LITS",
   subtitle: "Law, Innovation & Technology Society",
-  description: "Empowering QUT students to become the next generation of legal tech and tech law innovators",
+  description: "Empowering QUT students to become the next generation of legal tech innovators and tech law pioneers. Master AI-powered legal tools, blockchain contracts, emerging technologies, and the legal frameworks that govern innovation.",
   cta: "Join Our Community",
   stats: [
     { number: "500+", label: "Active Members", icon: Users },
@@ -23,7 +23,7 @@ const BANNER_SLIDES = [
     id: 1,
     title: "Welcome to QUT LITS",
     subtitle: "Where Law Meets Innovation",
-    description: "Join the premier society bridging legal education with cutting-edge technology. Learn from industry experts, build real-world projects, and launch your career in legal tech.",
+    description: "Join the premier society bridging legal education with cutting-edge technology. Learn from industry experts, build real-world projects, and launch your career in legal tech and tech law.",
     image: "/headshot.png",
     cta: "Discover More",
     link: "/about",
@@ -31,9 +31,9 @@ const BANNER_SLIDES = [
   },
   {
     id: 2,
-    title: "AI in Legal Practice",
+    title: "AI & Legal Innovation",
     subtitle: "Hands-On Workshop",
-    description: "Master AI-powered legal research, contract analysis, and case management tools. Get hands-on experience with the technologies transforming the legal industry.",
+    description: "Master AI-powered legal research, contract analysis, and case management tools. Explore the legal implications of AI and how to navigate emerging regulatory frameworks.",
     image: "/headshot.png",
     cta: "Register Now",
     link: "/join",
@@ -41,9 +41,9 @@ const BANNER_SLIDES = [
   },
   {
     id: 3,
-    title: "Legal Tech Networking",
+    title: "Tech Law & Innovation",
     subtitle: "Connect with Industry Leaders",
-    description: "Build your professional network with legal tech startups, law firms, and technology companies. Discover internship and career opportunities in this rapidly growing field.",
+    description: "Build your professional network with legal tech startups, law firms, and technology companies. Discover opportunities in tech law, regulatory compliance, and innovation policy.",
     image: "/headshot.png",
     cta: "Join Network",
     link: "/join",
@@ -55,7 +55,7 @@ const BANNER_SLIDES = [
 const BENEFITS = [
   {
     icon: Brain,
-    title: "AI & Legal Tech Mastery",
+    title: "Legal Tech & AI Mastery",
     description: "Master emerging technologies reshaping the legal industry through hands-on workshops and real-world projects",
     color: "primary",
     features: ["Machine Learning", "Contract Analysis", "Legal Research AI"],
@@ -63,10 +63,10 @@ const BENEFITS = [
   },
   {
     icon: Code,
-    title: "Technical Skills Development",
-    description: "Develop coding and automation skills for legal processes with industry-standard tools and frameworks",
+    title: "Tech Law & Innovation",
+    description: "Develop expertise in the legal frameworks governing technology, from AI regulation to blockchain law",
     color: "secondary",
-    features: ["Python", "Legal APIs", "Automation Tools"],
+    features: ["Regulatory Compliance", "Tech Policy", "Innovation Law"],
     techElements: [GitBranch, Layers, Cpu]
   },
   {
@@ -79,8 +79,8 @@ const BENEFITS = [
   },
   {
     icon: Target,
-    title: "Career Pathways",
-    description: "Navigate the evolving landscape of legal technology careers with mentorship and industry connections",
+    title: "Dual Career Pathways",
+    description: "Navigate both legal tech development and tech law careers with mentorship and industry connections",
     color: "orange",
     features: ["Industry Insights", "Mentorship", "Job Placement"],
     techElements: [TrendingUp, Briefcase, Network]
@@ -90,27 +90,27 @@ const BENEFITS = [
 // Upcoming events data
 const UPCOMING_EVENTS = [
   {
-    title: "AI in Legal Practice Workshop",
+    title: "AI & Legal Innovation Workshop",
     date: "March 15, 2025",
     time: "2:00 PM - 5:00 PM",
     location: "QUT Innovation Lab",
     type: "Workshop",
     spots: "Limited spots available",
-    description: "Learn how AI is transforming legal research, contract analysis, and case management. Get hands-on experience with cutting-edge legal tech tools.",
+    description: "Learn how AI is transforming legal research and explore the regulatory frameworks governing AI adoption in legal practice.",
     techIcons: [Brain, Cpu, Database]
   },
   {
-    title: "Legal Tech Industry Night",
+    title: "Tech Law & Innovation Night",
     date: "March 28, 2025",
     time: "6:00 PM - 9:00 PM",
     location: "Virtual Event",
     type: "Networking",
     spots: "Open to all members",
-    description: "Connect with legal tech startups, law firms, and technology companies. Discover internship and career opportunities in this rapidly growing field.",
+    description: "Connect with legal tech startups, law firms, and technology companies. Discover opportunities in both legal tech development and tech law careers.",
     techIcons: [Network, Globe, Briefcase]
   },
   {
-    title: "Legal Tech Hackathon 2025",
+    title: "Legal Tech & Innovation Hackathon 2025",
     date: "April 10-12, 2025",
     time: "48-hour event",
     location: "QUT Innovation Lab",
@@ -124,24 +124,24 @@ const UPCOMING_EVENTS = [
 // Featured content
 const FEATURED_CONTENT = [
   {
-    title: "Legal Tech Trends 2025",
-    description: "Explore the latest developments in legal technology and their impact on the industry. From AI-powered research to blockchain contracts.",
+    title: "Legal Tech & Innovation Trends 2025",
+    description: "Explore the latest developments in legal technology and tech law. From AI-powered research to blockchain contracts and regulatory frameworks.",
     image: "/headshot.png",
     category: "Research",
     readTime: "5 min read",
     techIcons: [TrendingUp, Cpu, Database]
   },
   {
-    title: "AI Ethics in Law",
-    description: "Understanding the ethical implications of AI adoption in legal practice. Balancing innovation with responsibility.",
+    title: "AI Ethics & Legal Innovation",
+    description: "Understanding the ethical implications of AI adoption in legal practice and the regulatory frameworks that govern innovation.",
     image: "/headshot.png",
     category: "Ethics",
     readTime: "8 min read",
     techIcons: [Brain, Shield, Eye]
   },
   {
-    title: "Blockchain & Smart Contracts",
-    description: "How blockchain technology is revolutionizing contract law and execution. The future of automated legal agreements.",
+    title: "Blockchain Law & Smart Contracts",
+    description: "How blockchain technology is revolutionizing contract law and the legal frameworks that govern decentralized innovation.",
     image: "/headshot.png",
     category: "Technology",
     readTime: "6 min read",
@@ -367,7 +367,7 @@ function EventsSection() {
           className="text-center mt-12"
         >
           <Link
-            to="/join"
+            to="/events"
             className="inline-flex items-center gap-2 text-primary hover:text-primary/80 font-semibold font-rubik text-lg hover:scale-105 transition-all duration-300"
           >
             View all events
