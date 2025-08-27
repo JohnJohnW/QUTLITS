@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { ArrowRight, Calendar, Users, MapPin, Clock, Award, Brain, Code, Rocket, Target, Network, Globe, Briefcase, Zap, Sparkles, Scale, Cpu, Database, Shield, Eye, Layers, Lock, TrendingUp, GitBranch } from "lucide-react";
 import Navigation from "../components/Navigation";
 
@@ -96,6 +96,15 @@ const PAST_EVENTS = [
 ];
 
 function Events() {
+  const navigate = useNavigate();
+  
+  const handleJoinClick = () => {
+    navigate('/');
+    setTimeout(() => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }, 100);
+  };
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-dark-blue via-dark-purple to-dark-blue">
       <Navigation />
@@ -302,7 +311,7 @@ function Events() {
             
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
               <button
-                onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+                onClick={handleJoinClick}
                 className="group relative inline-flex items-center gap-3 bg-gradient-to-r from-primary to-purple text-white px-10 py-5 rounded-2xl text-xl font-semibold hover:from-primary/90 hover:to-purple/90 transition-all duration-300 shadow-2xl hover:shadow-primary/25 font-rubik overflow-hidden"
               >
                 <span className="relative z-10">Join QUT LITS</span>
