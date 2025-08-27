@@ -30,7 +30,7 @@ A modern, responsive personal portfolio website built with React, Vite, and Tail
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/YOUR_USERNAME/QUTLITS.git
+git clone https://github.com/JohnJohnW/QUTLITS.git
 cd QUTLITS
 ```
 
@@ -59,7 +59,7 @@ This project is automatically deployed to GitHub Pages via GitHub Actions. Simpl
 
 ## Live Demo
 
-Visit the live site: [https://YOUR_USERNAME.github.io/QUTLITS](https://YOUR_USERNAME.github.io/QUTLITS)
+Visit the live site: [https://JohnJohnW.github.io/QUTLITS](https://JohnJohnW.github.io/QUTLITS)
 
 ## License
 
