@@ -8,20 +8,15 @@ import Contact from './pages/Contact'
 
 export default function App() {
   return (
-    <div style={{ padding: '20px', color: 'white', backgroundColor: '#120458', minHeight: '100vh' }}>
-      <h1>QUT LITS Portfolio</h1>
-      <p>If you can see this, React is working!</p>
-      
-      <Router>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/join" element={<Join />} />
-          <Route path="/events" element={<Events />} />
-          <Route path="/learn" element={<Learn />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
-      </Router>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/join" element={<Join />} />
+        <Route path="/events" element={<Events />} />
+        <Route path="/learn" element={<Learn />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+    </Router>
   )
 }
