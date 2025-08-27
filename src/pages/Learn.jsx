@@ -277,7 +277,7 @@ function Learn() {
                 
                 <div className="text-center">
                   <Link
-                    to="/join"
+                    to="/"
                     className="inline-flex items-center gap-2 text-primary hover:text-primary/80 font-semibold font-rubik text-sm hover:scale-105 transition-all duration-300"
                   >
                     Start Learning Path
@@ -370,7 +370,7 @@ function Learn() {
                   </p>
                   
                   <Link
-                    to="/join"
+                    to="/"
                     className="inline-flex items-center gap-2 text-primary hover:text-primary/80 font-semibold font-rubik text-sm hover:scale-105 transition-all duration-300"
                   >
                     Access Resource
@@ -403,7 +403,7 @@ function Learn() {
             
             <div className="flex justify-center">
               <Link
-                to="/join"
+                to="/"
                 className="group relative inline-flex items-center bg-gradient-to-r from-primary to-purple text-white px-10 py-5 rounded-2xl text-xl font-semibold hover:from-primary/90 hover:to-purple/90 transition-all duration-300 shadow-2xl hover:shadow-primary/25 font-rubik overflow-hidden"
               >
                 <span className="relative z-10">Join Now</span>

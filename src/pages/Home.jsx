@@ -36,7 +36,7 @@ const BANNER_SLIDES = [
     description: "Master AI-powered legal research, contract analysis, and case management tools. Explore the legal implications of AI and how to navigate emerging regulatory frameworks.",
     image: "/headshot.png",
     cta: "Register Now",
-    link: "/join",
+    link: "/",
     techIcons: [Brain, Code, Rocket]
   },
   {
@@ -46,7 +46,7 @@ const BANNER_SLIDES = [
     description: "Build your professional network with legal tech startups, law firms, and technology companies. Discover opportunities in tech law, regulatory compliance, and innovation policy.",
     image: "/headshot.png",
     cta: "Connect Now",
-    link: "/join",
+    link: "/",
     techIcons: [Network, Globe, Briefcase]
   }
 ];
@@ -208,7 +208,7 @@ function HeroSection() {
           className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-16"
         >
           <Link
-            to="/join"
+            to="/"
             className="group relative inline-flex items-center gap-3 bg-gradient-to-r from-primary to-purple text-white px-10 py-5 rounded-2xl text-xl font-semibold hover:from-primary/90 hover:to-purple/90 transition-all duration-300 shadow-2xl hover:shadow-primary/25 font-rubik overflow-hidden"
           >
             <span className="relative z-10">{HERO_DATA.cta}</span>
@@ -400,7 +400,7 @@ function CTASection() {
           
           <div className="flex justify-center">
             <Link
-              to="/join"
+              to="/"
               className="group relative inline-flex items-center bg-gradient-to-r from-primary to-purple text-white px-10 py-5 rounded-2xl text-xl font-semibold hover:from-primary/90 hover:to-purple/90 transition-all duration-300 shadow-2xl hover:shadow-primary/25 font-rubik overflow-hidden"
             >
               <span className="relative z-10">Join Now</span>
