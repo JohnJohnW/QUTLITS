@@ -6,56 +6,56 @@ import Navigation from "../components/Navigation";
 
 const EXECUTIVE_TEAM = [
   {
-    name: "John Wynter",
-    role: "President",
+    name: "placeholder",
+    role: "placeholder",
     image: "/headshot.png",
-    bio: "Leading QUT LITS with a passion for connecting law and technology. Studying Law and IT at QUT.",
-    email: "president@qutlits.edu.au",
+    bio: "placeholder",
+    email: "placeholder@qutlits.edu.au",
     linkedin: "#",
     github: "#"
   },
   {
-    name: "Sarah Chen",
-    role: "Vice President",
+    name: "placeholder",
+    role: "placeholder",
     image: "/headshot.png",
-    bio: "Driving innovation in legal technology education and fostering industry partnerships.",
-    email: "vicepresident@qutlits.edu.au",
+    bio: "placeholder",
+    email: "placeholder@qutlits.edu.au",
     linkedin: "#",
     github: "#"
   },
   {
-    name: "Michael Rodriguez",
-    role: "Secretary",
+    name: "placeholder",
+    role: "placeholder",
     image: "/headshot.png",
-    bio: "Ensuring smooth operations and communication within the society and with external partners.",
-    email: "secretary@qutlits.edu.au",
+    bio: "placeholder",
+    email: "placeholder@qutlits.edu.au",
     linkedin: "#",
     github: "#"
   },
   {
-    name: "Emily Watson",
-    role: "Treasurer",
+    name: "placeholder",
+    role: "placeholder",
     image: "/headshot.png",
-    bio: "Managing society finances and budgeting for events, workshops, and initiatives.",
-    email: "treasurer@qutlits.edu.au",
+    bio: "placeholder",
+    email: "placeholder@qutlits.edu.au",
     linkedin: "#",
     github: "#"
   },
   {
-    name: "David Kim",
-    role: "Industry Coordinator",
+    name: "placeholder",
+    role: "placeholder",
     image: "/headshot.png",
-    bio: "Building bridges between students and industry professionals in law and technology.",
-    email: "industry@qutlits.edu.au",
+    bio: "placeholder",
+    email: "placeholder@qutlits.edu.au",
     linkedin: "#",
     github: "#"
   },
   {
-    name: "Lisa Thompson",
-    role: "Events Coordinator",
+    name: "placeholder",
+    role: "placeholder",
     image: "/headshot.png",
-    bio: "Organizing engaging events, workshops, and networking opportunities for members.",
-    email: "events@qutlits.edu.au",
+    bio: "placeholder",
+    email: "placeholder@qutlits.edu.au",
     linkedin: "#",
     github: "#"
   }
