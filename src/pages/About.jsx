@@ -284,7 +284,11 @@ function ExecutiveTeamSection() {
 
 function CTASection() {
   const handleJoinClick = () => {
-    window.location.href = '/';
+    navigate('/', { replace: true });
+    // Force scroll to top after navigation
+    setTimeout(() => {
+      window.scrollTo(0, 0);
+    }, 50);
   };
 
   return (
