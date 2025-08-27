@@ -99,7 +99,7 @@ function Events() {
   const navigate = useNavigate();
   
   const handleJoinClick = () => {
-    navigate('/');
+    window.location.href = '/';
   };
 
   return (

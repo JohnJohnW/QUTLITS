@@ -19,7 +19,7 @@ function Navigation() {
   }, []);
 
   const handleJoinClick = () => {
-    navigate('/');
+    window.location.href = '/';
   };
 
   const navigationItems = [

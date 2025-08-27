@@ -380,10 +380,8 @@ function EventsSection() {
 }
 
 function CTASection() {
-  const navigate = useNavigate();
-  
   const handleJoinClick = () => {
-    navigate('/');
+    window.location.href = '/';
   };
 
   return (
