@@ -6,14 +6,47 @@ import Events from './pages/Events'
 import Learn from './pages/Learn'
 import Contact from './pages/Contact'
 
-// Component to scroll to top on route change
+// Component to scroll to top on route/hash/history changes
 function ScrollToTop() {
   const location = useLocation()
   
   useEffect(() => {
-    // Force scroll to top on every navigation
-    window.scrollTo(0, 0)
-  }, [location]) // Use entire location object to detect all changes
+    if ('scrollRestoration' in window.history) {
+      window.history.scrollRestoration = 'manual'
+    }
+
+    const performScrollToTop = () => {
+      const html = document.documentElement
+      const body = document.body
+      const prevHtmlBehavior = html.style.scrollBehavior
+      const prevBodyBehavior = body.style.scrollBehavior
+      html.style.scrollBehavior = 'auto'
+      body.style.scrollBehavior = 'auto'
+
+      const scrollNow = () => window.scrollTo(0, 0)
+      scrollNow()
+      requestAnimationFrame(scrollNow)
+      setTimeout(scrollNow, 50)
+
+      // restore smooth behavior if any
+      requestAnimationFrame(() => {
+        html.style.scrollBehavior = prevHtmlBehavior
+        body.style.scrollBehavior = prevBodyBehavior
+      })
+    }
+
+    performScrollToTop()
+
+    const onHashChange = () => performScrollToTop()
+    const onPopState = () => performScrollToTop()
+
+    window.addEventListener('hashchange', onHashChange)
+    window.addEventListener('popstate', onPopState)
+    return () => {
+      window.removeEventListener('hashchange', onHashChange)
+      window.removeEventListener('popstate', onPopState)
+    }
+  }, [location])
   
   return null
 }
